@@ -7,3 +7,14 @@
 //
 
 import Foundation
+import Alamofire
+class UserService {
+    static let sharedInstance = UserService()
+    private var manager: SessionManager
+    
+    private init() {
+        self.manager = Alamofire.SessionManager.default
+    }
+    
+   
+}

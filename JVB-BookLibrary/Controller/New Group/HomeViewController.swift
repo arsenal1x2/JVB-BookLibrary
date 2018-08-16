@@ -7,10 +7,22 @@
 //
 
 import UIKit
-
+protocol HomeViewControllerDelegate {
+    func didPressedButtonLogout()
+}
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var newUpdateBtn: UIButton!
+    @IBOutlet weak var allBtn: UIButton!
+    @IBOutlet weak var hightlightBtn: UIButton!
+    @IBOutlet weak var booksCollectionView: UICollectionView!
+    @IBOutlet weak var topView: UIView!
+    var delegate:HomeViewControllerDelegate?
     override func viewDidLoad() {
+        booksCollectionView.delegate = self
+        booksCollectionView.dataSource = self
+        setupView()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -21,15 +33,32 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func clickButtonSearch(_ sender: Any) {
     }
-    */
+    func setupView() {
+        setBoderButton(button: allBtn)
+        setBoderButton(button: hightlightBtn)
+        setBoderButton(button: newUpdateBtn)
+    }
+    func setBoderButton(button:UIButton) {
+        button.clipsToBounds = true
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.backgroundColor = UIColor.white
+    }
 
+}
+extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = booksCollectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BookCollectionViewCell
+        return cell
+    }
+    
+    
 }

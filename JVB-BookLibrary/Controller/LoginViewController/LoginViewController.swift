@@ -57,9 +57,13 @@ class LoginViewController: UIViewController {
         container.isHidden = false
         actInd.startAnimating()
         if (result.success == true) {
-            print("abc")
+            let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(homeViewController, animated: true)
+            actInd.stopAnimating()
         }else{
-            print("bb")
+            let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(homeViewController, animated: true)
+            actInd.stopAnimating()
         }
         
     }

@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		84774A04211296FC00A8DF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A03211296FC00A8DF26 /* AppDelegate.swift */; };
-		84774A06211296FC00A8DF26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A05211296FC00A8DF26 /* ViewController.swift */; };
 		84774A09211296FC00A8DF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84774A07211296FC00A8DF26 /* Main.storyboard */; };
 		84774A0B211296FC00A8DF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84774A0A211296FC00A8DF26 /* Assets.xcassets */; };
 		84774A0E211296FC00A8DF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84774A0C211296FC00A8DF26 /* LaunchScreen.storyboard */; };
 		84774A19211296FC00A8DF26 /* JVB_BookLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A18211296FC00A8DF26 /* JVB_BookLibraryTests.swift */; };
 		84774A24211296FC00A8DF26 /* JVB_BookLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A23211296FC00A8DF26 /* JVB_BookLibraryUITests.swift */; };
+		84774A332112972500A8DF26 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A322112972500A8DF26 /* LoginForm.swift */; };
+		84774A37211298CB00A8DF26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A36211298CB00A8DF26 /* LoginViewController.swift */; };
+		84774A3D2112AF9D00A8DF26 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A3C2112AF9D00A8DF26 /* Constant.swift */; };
+		84774A402112B71100A8DF26 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A3F2112B71100A8DF26 /* UserService.swift */; };
+		84774A422112B76000A8DF26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A412112B76000A8DF26 /* User.swift */; };
+		84774A442112CF1000A8DF26 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A432112CF1000A8DF26 /* Extensions.swift */; };
+		84774A462112E04100A8DF26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A452112E04000A8DF26 /* HomeViewController.swift */; };
+		84774A4B2112F94E00A8DF26 /* BookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A4A2112F94E00A8DF26 /* BookCollectionViewCell.swift */; };
+		84774A4D2113063C00A8DF26 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84774A4C2113063C00A8DF26 /* Book.swift */; };
+		84D413CF21255B1700C3C4B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D413CE21255B1700C3C4B0 /* MenuViewController.swift */; };
+		84D413D22125633E00C3C4B0 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D413D12125633E00C3C4B0 /* MenuTableViewCell.swift */; };
+		DCF277E48221B503FA5A182C /* Pods_JVB_BookLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F131B99FB5B5B3835F2E6E9 /* Pods_JVB_BookLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F131B99FB5B5B3835F2E6E9 /* Pods_JVB_BookLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JVB_BookLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84774A00211296FC00A8DF26 /* JVB-BookLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JVB-BookLibrary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84774A03211296FC00A8DF26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84774A05211296FC00A8DF26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84774A08211296FC00A8DF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84774A0A211296FC00A8DF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84774A0D211296FC00A8DF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,19 @@
 		84774A1F211296FC00A8DF26 /* JVB-BookLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JVB-BookLibraryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84774A23211296FC00A8DF26 /* JVB_BookLibraryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JVB_BookLibraryUITests.swift; sourceTree = "<group>"; };
 		84774A25211296FC00A8DF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84774A322112972500A8DF26 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		84774A36211298CB00A8DF26 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		84774A3C2112AF9D00A8DF26 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		84774A3F2112B71100A8DF26 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		84774A412112B76000A8DF26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84774A432112CF1000A8DF26 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84774A452112E04000A8DF26 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "../New Group/HomeViewController.swift"; sourceTree = "<group>"; };
+		84774A4A2112F94E00A8DF26 /* BookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCollectionViewCell.swift; sourceTree = "<group>"; };
+		84774A4C2113063C00A8DF26 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		84D413CE21255B1700C3C4B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		84D413D12125633E00C3C4B0 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		B12D79CD2A6137BBF26C69FA /* Pods-JVB-BookLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVB-BookLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-JVB-BookLibrary/Pods-JVB-BookLibrary.release.xcconfig"; sourceTree = "<group>"; };
+		DEB1AC023A4F067E80B785FD /* Pods-JVB-BookLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVB-BookLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JVB-BookLibrary/Pods-JVB-BookLibrary.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF277E48221B503FA5A182C /* Pods_JVB_BookLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC5B3AD160931E3DAD8434D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DEB1AC023A4F067E80B785FD /* Pods-JVB-BookLibrary.debug.xcconfig */,
+				B12D79CD2A6137BBF26C69FA /* Pods-JVB-BookLibrary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		847749F7211296FC00A8DF26 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,8 @@
 				84774A17211296FC00A8DF26 /* JVB-BookLibraryTests */,
 				84774A22211296FC00A8DF26 /* JVB-BookLibraryUITests */,
 				84774A01211296FC00A8DF26 /* Products */,
+				0DC5B3AD160931E3DAD8434D /* Pods */,
+				913D94F03556D64AA1E7B892 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +133,12 @@
 		84774A02211296FC00A8DF26 /* JVB-BookLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				84774A3E2112B69F00A8DF26 /* Service */,
+				84774A392112AC2500A8DF26 /* Ultilities */,
+				84774A35211298B000A8DF26 /* View */,
+				84774A34211298A700A8DF26 /* Controller */,
+				84774A312112970400A8DF26 /* Model */,
 				84774A03211296FC00A8DF26 /* AppDelegate.swift */,
-				84774A05211296FC00A8DF26 /* ViewController.swift */,
 				84774A07211296FC00A8DF26 /* Main.storyboard */,
 				84774A0A211296FC00A8DF26 /* Assets.xcassets */,
 				84774A0C211296FC00A8DF26 /* LaunchScreen.storyboard */,
@@ -125,6 +165,100 @@
 			path = "JVB-BookLibraryUITests";
 			sourceTree = "<group>";
 		};
+		84774A312112970400A8DF26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84774A322112972500A8DF26 /* LoginForm.swift */,
+				84774A412112B76000A8DF26 /* User.swift */,
+				84774A4C2113063C00A8DF26 /* Book.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84774A34211298A700A8DF26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84D413CD21255AC900C3C4B0 /* MenuViewController */,
+				84774A482112F90C00A8DF26 /* HomeViewContrller */,
+				84774A472112F8F200A8DF26 /* LoginViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84774A35211298B000A8DF26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84774A392112AC2500A8DF26 /* Ultilities */ = {
+			isa = PBXGroup;
+			children = (
+				84774A3C2112AF9D00A8DF26 /* Constant.swift */,
+				84774A432112CF1000A8DF26 /* Extensions.swift */,
+			);
+			path = Ultilities;
+			sourceTree = "<group>";
+		};
+		84774A3E2112B69F00A8DF26 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84774A3F2112B71100A8DF26 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84774A472112F8F200A8DF26 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84774A36211298CB00A8DF26 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		84774A482112F90C00A8DF26 /* HomeViewContrller */ = {
+			isa = PBXGroup;
+			children = (
+				84774A492112F91E00A8DF26 /* Cells */,
+				84774A452112E04000A8DF26 /* HomeViewController.swift */,
+			);
+			path = HomeViewContrller;
+			sourceTree = "<group>";
+		};
+		84774A492112F91E00A8DF26 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84774A4A2112F94E00A8DF26 /* BookCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		84D413CD21255AC900C3C4B0 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84D413D02125631B00C3C4B0 /* Cells */,
+				84D413CE21255B1700C3C4B0 /* MenuViewController.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		84D413D02125631B00C3C4B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84D413D12125633E00C3C4B0 /* MenuTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		913D94F03556D64AA1E7B892 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F131B99FB5B5B3835F2E6E9 /* Pods_JVB_BookLibrary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84774A28211296FC00A8DF26 /* Build configuration list for PBXNativeTarget "JVB-BookLibrary" */;
 			buildPhases = (
+				12145B86D7C2134CCF37D950 /* [CP] Check Pods Manifest.lock */,
 				847749FC211296FC00A8DF26 /* Sources */,
 				847749FD211296FC00A8DF26 /* Frameworks */,
 				847749FE211296FC00A8DF26 /* Resources */,
+				DE37E62B52971A65025A158D /* [CP] Embed Pods Frameworks */,
+				012BCFD5A95A29B0ABF8C04F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +391,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		012BCFD5A95A29B0ABF8C04F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JVB-BookLibrary/Pods-JVB-BookLibrary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12145B86D7C2134CCF37D950 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JVB-BookLibrary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE37E62B52971A65025A158D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JVB-BookLibrary/Pods-JVB-BookLibrary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JVB-BookLibrary/Pods-JVB-BookLibrary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847749FC211296FC00A8DF26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84774A06211296FC00A8DF26 /* ViewController.swift in Sources */,
+				84774A37211298CB00A8DF26 /* LoginViewController.swift in Sources */,
+				84774A402112B71100A8DF26 /* UserService.swift in Sources */,
+				84D413D22125633E00C3C4B0 /* MenuTableViewCell.swift in Sources */,
+				84774A4B2112F94E00A8DF26 /* BookCollectionViewCell.swift in Sources */,
+				84774A442112CF1000A8DF26 /* Extensions.swift in Sources */,
+				84D413CF21255B1700C3C4B0 /* MenuViewController.swift in Sources */,
+				84774A3D2112AF9D00A8DF26 /* Constant.swift in Sources */,
+				84774A462112E04100A8DF26 /* HomeViewController.swift in Sources */,
+				84774A332112972500A8DF26 /* LoginForm.swift in Sources */,
 				84774A04211296FC00A8DF26 /* AppDelegate.swift in Sources */,
+				84774A4D2113063C00A8DF26 /* Book.swift in Sources */,
+				84774A422112B76000A8DF26 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +627,7 @@
 		};
 		84774A29211296FC00A8DF26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB1AC023A4F067E80B785FD /* Pods-JVB-BookLibrary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +642,7 @@
 		};
 		84774A2A211296FC00A8DF26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12D79CD2A6137BBF26C69FA /* Pods-JVB-BookLibrary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
